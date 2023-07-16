@@ -1,0 +1,19 @@
+.header__burger {
+  display: none;
+  position: relative;
+  height: 21px;
+  width: 24px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .header__burger {
+    display: inline-block;
+    margin-right: 26px;
+  }
+}

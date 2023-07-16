@@ -1,0 +1,10 @@
+.link-hover {
+  transition: opacity 0.25s;
+  cursor: pointer;
+}
+
+@media screen and (hover: hover) {
+  .link-hover:hover {
+    opacity: .6;
+  }
+}

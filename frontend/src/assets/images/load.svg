@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" display="block" preserveAspectRatio="xMidYMid" style="margin:auto;background:#000" viewBox="0 0 100 100">
+  <g transform="translate(80 50)">
+    <circle r="4" fill="#fff">
+      <animateTransform attributeName="transform" begin="-1.2668918918918919s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-1.2668918918918919s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(22.5 -115.683 226.094)">
+    <circle r="4" fill="#fff" fill-opacity=".938">
+      <animateTransform attributeName="transform" begin="-1.1824324324324325s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-1.1824324324324325s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(45 -50.355 121.569)">
+    <circle r="4" fill="#fff" fill-opacity=".875">
+      <animateTransform attributeName="transform" begin="-1.097972972972973s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-1.097972972972973s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(67.5 -27.415 84.864)">
+    <circle r="4" fill="#fff" fill-opacity=".813">
+      <animateTransform attributeName="transform" begin="-1.0135135135135136s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-1.0135135135135136s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(90 -15 65)">
+    <circle r="4" fill="#fff" fill-opacity=".75">
+      <animateTransform attributeName="transform" begin="-0.9290540540540541s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-0.9290540540540541s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(112.5 -6.704 51.727)">
+    <circle r="4" fill="#fff" fill-opacity=".688">
+      <animateTransform attributeName="transform" begin="-0.8445945945945946s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-0.8445945945945946s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(135 -.355 41.569)">
+    <circle r="4" fill="#fff" fill-opacity=".625">
+      <animateTransform attributeName="transform" begin="-0.7601351351351352s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-0.7601351351351352s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(157.5 5.027 32.956)">
+    <circle r="4" fill="#fff" fill-opacity=".563">
+      <animateTransform attributeName="transform" begin="-0.6756756756756757s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-0.6756756756756757s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(180 10 25)">
+    <circle r="4" fill="#fff" fill-opacity=".5">
+      <animateTransform attributeName="transform" begin="-0.5912162162162162s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-0.5912162162162162s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(-157.5 14.973 17.044)">
+    <circle r="4" fill="#fff" fill-opacity=".438">
+      <animateTransform attributeName="transform" begin="-0.5067567567567568s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-0.5067567567567568s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(-135 20.355 8.431)">
+    <circle r="4" fill="#fff" fill-opacity=".375">
+      <animateTransform attributeName="transform" begin="-0.4222972972972973s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-0.4222972972972973s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(-112.5 26.704 -1.727)">
+    <circle r="4" fill="#fff" fill-opacity=".313">
+      <animateTransform attributeName="transform" begin="-0.33783783783783783s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-0.33783783783783783s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(-90 35 -15)">
+    <circle r="4" fill="#fff" fill-opacity=".25">
+      <animateTransform attributeName="transform" begin="-0.2533783783783784s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-0.2533783783783784s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(-67.5 47.415 -34.864)">
+    <circle r="4" fill="#fff" fill-opacity=".188">
+      <animateTransform attributeName="transform" begin="-0.16891891891891891s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-0.16891891891891891s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(-45 70.355 -71.569)">
+    <circle r="4" fill="#fff" fill-opacity=".125">
+      <animateTransform attributeName="transform" begin="-0.08445945945945946s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="-0.08445945945945946s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+  <g transform="rotate(-22.5 135.683 -176.094)">
+    <circle r="4" fill="#fff" fill-opacity=".063">
+      <animateTransform attributeName="transform" begin="0s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" type="scale" values="1.5 1.5;1 1"/>
+      <animate attributeName="fill-opacity" begin="0s" dur="1.3513513513513513s" keyTimes="0;1" repeatCount="indefinite" values="1;0"/>
+    </circle>
+  </g>
+</svg>

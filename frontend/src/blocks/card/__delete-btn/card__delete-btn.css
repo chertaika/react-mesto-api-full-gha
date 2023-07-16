@@ -1,0 +1,15 @@
+.card__delete-btn {
+  background-image: url("../../../assets/images/delete-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  position: absolute;
+  width: 18px;
+  height: 19px;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}

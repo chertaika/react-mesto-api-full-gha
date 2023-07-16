@@ -1,0 +1,10 @@
+.authentication__input_type_error {
+  border-bottom-color: #f00;
+}
+
+.authentication__input_type_error:focus-visible {
+  border-bottom: none;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 2px #f00;
+  outline: none;
+}

@@ -1,0 +1,13 @@
+.authentication__paragraph {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 15px 0 0;
+}
+
+@media screen and (max-width: 767px) {
+  .authentication__paragraph {
+    margin-top: 20px;
+  }
+}

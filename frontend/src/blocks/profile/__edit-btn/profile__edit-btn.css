@@ -1,0 +1,21 @@
+.profile__edit-btn {
+  width: 24px;
+  aspect-ratio: 1/1;
+  background-image: url(../../../assets/images/edit-button.svg);
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #fff;
+  padding: 0;
+  grid-area: btn;
+  align-self: end;
+  margin-bottom: 9px;
+}
+
+@media screen and (max-width: 767px) {
+  .profile__edit-btn {
+    width: 18px;
+    background-size: 8px;
+    margin-bottom: 7px;
+  }
+}

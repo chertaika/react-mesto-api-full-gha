@@ -1,0 +1,35 @@
+.header__burger-line {
+  width: 100%;
+  height: 3px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  opacity: 1;
+  top: 9px;
+  transition-duration: .25s;
+  transition-delay: .25s;
+}
+
+.header__burger-line:before {
+  left: 0;
+  position: absolute;
+  top: -9px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  content: "";
+  transition-duration: .25s;
+  transition: transform .25s, top .25s .25s;
+}
+
+.header__burger-line:after {
+  left: 0;
+  position: absolute;
+  top: 9px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  content: "";
+  transition-duration: .25s;
+  transition: transform .25s, top .25s .25s;
+}

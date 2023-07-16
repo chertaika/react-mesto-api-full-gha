@@ -1,0 +1,8 @@
+.authentication__input-error {
+  color: #f00;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  min-height: 24px;
+  transition: opacity .2s;
+}

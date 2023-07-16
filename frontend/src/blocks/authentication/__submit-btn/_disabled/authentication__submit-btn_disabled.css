@@ -1,0 +1,12 @@
+.authentication__submit-btn_disabled {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, .2);
+  color: rgba(255, 255, 255, .2);
+  cursor: auto;
+}
+
+@media (hover: hover) {
+  .authentication__submit-btn_disabled:hover {
+    opacity: 1;
+  }
+}

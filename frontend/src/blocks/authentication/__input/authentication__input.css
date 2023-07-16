@@ -1,0 +1,23 @@
+.authentication__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 6px 0 6px;
+  width: 100%;
+  color: #ccc;
+}
+
+.authentication__input:focus-visible {
+  border-bottom: 2px solid #000;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 2px #238636;
+  outline: none;
+  outline-offset: 2px;
+}
+
+.authentication__input::placeholder {
+  color: #ccc;
+}

@@ -1,0 +1,11 @@
+.btn-hover {
+  transition: opacity 0.25s;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) {
+  .btn-hover:hover {
+    opacity: .6;
+  }
+}

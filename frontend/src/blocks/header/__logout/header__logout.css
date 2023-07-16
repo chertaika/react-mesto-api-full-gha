@@ -1,0 +1,8 @@
+.header__logout {
+  background-color: transparent;
+  color: #a9a9a9;
+  font-weight: 400;
+  border: none;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
