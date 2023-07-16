@@ -6,6 +6,7 @@ const { errors } = require('celebrate');
 const { DB_URI, PORT } = require('./config');
 const errorHandler = require('./middlewares/errorHandler');
 const router = require('./routes');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 (async () => {
   try {
@@ -24,7 +25,11 @@ app.use(express.json());
 
 app.use(cookieParser());
 
+app.use(requestLogger);
+
 app.use(router);
+
+app.use(errorLogger);
 
 app.use(errors());
 
