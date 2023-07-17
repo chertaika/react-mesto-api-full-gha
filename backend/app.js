@@ -3,6 +3,7 @@ const cookieParser = require('cookie-parser');
 const helmet = require('helmet');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
+const cors = require('cors');
 const { DB_URI, PORT } = require('./config');
 const errorHandler = require('./middlewares/errorHandler');
 const router = require('./routes');
@@ -18,6 +19,17 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 })();
 
 const app = express();
+
+const allowedCors = ['https://chertaika.nomoredomains.xyz'];
+
+const corsOptions = {
+  origin: allowedCors,
+  optionsSuccessStatus: 200,
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
+
 app.use(helmet());
 
 app.use(express.urlencoded({ extended: true }));
@@ -26,6 +38,13 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(requestLogger);
+
+// краш-тест для проверки автоматического перезапуска сервера
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
 
 app.use(router);
 
