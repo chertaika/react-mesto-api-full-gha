@@ -17,7 +17,7 @@ const checkData = (data) => {
 
 module.exports.getCards = async (req, res, next) => {
   try {
-    const cards = await Card.find({});
+    const cards = await Card.find({}).populate(['owner', 'likes']);
     return res.send(cards);
   } catch (error) {
     return next(error);
@@ -29,6 +29,7 @@ module.exports.createCard = async (req, res, next) => {
     const owner = req.user._id;
     const { name, link } = req.body;
     const card = await Card.create({ name, link, owner });
+    await card.populate(['owner', 'likes']);
     return res.send(card);
   } catch (error) {
     if (error instanceof ValidationError) {
@@ -73,9 +74,9 @@ const updateLikeCard = async (res, next, cardId, options) => {
       cardId,
       options,
       { new: true },
-    ).populate('likes');
+    ).populate(['owner', 'likes']);
     checkData(card);
-    return res.send(card.likes);
+    return res.send(card);
   } catch (error) {
     return handleLikeError(next, error);
   }
