@@ -13,7 +13,6 @@ class Auth {
   }
 
   _checkResponse(res) {
-    console.log(res);
     if (res.ok) {
       return res.json();
     }
@@ -31,6 +30,7 @@ class Auth {
       this._headers,
       {
         method: METHOD_POST,
+        credentials: 'include',
         body: JSON.stringify({
           password,
           email,
@@ -42,15 +42,19 @@ class Auth {
   authorization({ email, password }) {
     return this._request(this._authEndpoint, this._headers, {
       method: METHOD_POST,
+      credentials: 'include',
       body: JSON.stringify({ password, email }),
     });
   }
 
-  checkTokenValidity(token) {
-    return this._request(this._tokenEndpoint, {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${token}`,
-    });
+  checkTokenValidity() {
+    return this._request(
+      this._tokenEndpoint,
+      {
+        'Content-Type': 'application/json',
+      },
+      { credentials: 'include' },
+    );
   }
 }
 

@@ -41,8 +41,8 @@ const Main = ({
           aria-label="Добавить карточку"
         />
       </section>
-      <TransitionGroup component="section" className="elements" aria-label="Впечатляющие места России">
-        {cards.map(card => (
+      <TransitionGroup component="section" className="elements">
+        {cards.slice().reverse().map(card => (
           <CSSTransition key={card._id} timeout={600} classNames="card">
             <Card
               card={card}

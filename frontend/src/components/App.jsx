@@ -161,9 +161,8 @@ const App = () => {
   const handleAuthorization = useCallback(async (data) => {
     try {
       setButtonLogin({ buttonText: 'Вход...', block: true });
-      const { token } = await auth.authorization(data);
+      await auth.authorization(data);
       setIsLoading(true);
-      localStorage.setItem('token', token);
       setUserEmail(data.email);
       setIsLoggedIn(true);
       navigate('/', { replace: true });
@@ -187,28 +186,22 @@ const App = () => {
   }, []);
 
   const handleSignOut = useCallback(() => {
-    localStorage.removeItem('token');
     setIsLoggedIn(false);
     navigate('/sign-in', { replace: true });
   }, []);
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      (async () => {
-        try {
-          const { data: { email } } = await auth.checkTokenValidity(token);
-          setUserEmail(email);
-          setIsLoggedIn(true);
-          navigate('/', { replace: true });
-        } catch (error) {
-          setIsLoading(false);
-          console.log(`Ошибка: ${error}`);
-        }
-      })();
-    } else {
-      setIsLoading(false);
-    }
+    (async () => {
+      try {
+        const { email } = await auth.checkTokenValidity();
+        setUserEmail(email);
+        setIsLoggedIn(true);
+        navigate('/', { replace: true });
+      } catch (error) {
+        setIsLoading(false);
+        console.log(`Ошибка: ${error}`);
+      }
+    })();
   }, []);
 
   useEffect(() => {

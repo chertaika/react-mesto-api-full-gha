@@ -27,16 +27,17 @@ class Api {
   }
 
   getUserInfo() {
-    return this._request(`${this._userEndpoint}/me`);
+    return this._request(`${this._userEndpoint}/me`, { credentials: 'include' });
   }
 
   getInitialCards() {
-    return this._request(this._cardsEndpoint);
+    return this._request(this._cardsEndpoint, { credentials: 'include' });
   }
 
   editUserInfo({ name, about }) {
     return this._request(`${this._userEndpoint}/me`, {
       method: METHOD_PATCH,
+      credentials: 'include',
       body: JSON.stringify({
         name,
         about,
@@ -47,6 +48,7 @@ class Api {
   editUserAvatar({ avatar }) {
     return this._request(`${this._userEndpoint}/me/avatar`, {
       method: METHOD_PATCH,
+      credentials: 'include',
       body: JSON.stringify({
         avatar,
       }),
@@ -56,6 +58,7 @@ class Api {
   addNewCard({ name, link }) {
     return this._request(this._cardsEndpoint, {
       method: METHOD_POST,
+      credentials: 'include',
       body: JSON.stringify({
         name,
         link,
@@ -66,18 +69,21 @@ class Api {
   deleteCard(cardId) {
     return this._request(`${this._cardsEndpoint}/${cardId}`, {
       method: METHOD_DELETE,
+      credentials: 'include',
     });
   }
 
   _addLike(cardId) {
     return this._request(`${this._cardsEndpoint}/${cardId}/likes`, {
       method: METHOD_PUT,
+      credentials: 'include',
     });
   }
 
   _removeLike(cardId) {
     return this._request(`${this._cardsEndpoint}/${cardId}/likes`, {
       method: METHOD_DELETE,
+      credentials: 'include',
     });
   }
 
