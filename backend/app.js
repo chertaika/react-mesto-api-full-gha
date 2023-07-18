@@ -4,6 +4,7 @@ const helmet = require('helmet');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
 const cors = require('cors');
+const rateLimit = require('express-rate-limit');
 const { DB_URI, PORT } = require('./config');
 const errorHandler = require('./middlewares/errorHandler');
 const router = require('./routes');
@@ -28,9 +29,17 @@ const corsOptions = {
   credentials: true,
 };
 
+const limiter = rateLimit({
+  windowMs: 60 * 1000, // 1 минута
+  max: 100,
+  message: 'Превышено количество запросов на сервер. Пожалуйста, повторите позже',
+});
+
 app.use(cors(corsOptions));
 
 app.use(helmet());
+
+app.use(limiter);
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
