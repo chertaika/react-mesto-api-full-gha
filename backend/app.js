@@ -20,7 +20,7 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
 
-const allowedCors = ['https://chertaika.nomoredomains.xyz'];
+const allowedCors = ['https://chertaika.nomoredomains.xyz', 'http://localhost:3000'];
 
 const corsOptions = {
   origin: allowedCors,

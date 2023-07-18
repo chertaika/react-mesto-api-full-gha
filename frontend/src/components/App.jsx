@@ -103,7 +103,7 @@ const App = () => {
     try {
       setButtonAddPopup({ buttonText: 'Создание...', block: true });
       const userCard = await api.addNewCard(card);
-      setCards([userCard, ...cards]);
+      setCards([...cards, userCard]);
       closeAllPopups();
     } catch (error) {
       console.log(`Ошибка: ${error}`);
@@ -163,9 +163,7 @@ const App = () => {
       setButtonLogin({ buttonText: 'Вход...', block: true });
       await auth.authorization(data);
       setIsLoading(true);
-      setUserEmail(data.email);
       setIsLoggedIn(true);
-      navigate('/', { replace: true });
     } catch (error) {
       if (error === 401) {
         setTooltipMessage({
@@ -185,10 +183,15 @@ const App = () => {
     }
   }, []);
 
-  const handleSignOut = useCallback(() => {
-    setIsLoggedIn(false);
-    navigate('/sign-in', { replace: true });
-  }, []);
+  const handleSignOut = async () => {
+    try {
+      await auth.logout();
+      setIsLoggedIn(false);
+      navigate('/sign-in', { replace: true });
+    } catch (error) {
+      console.log(`Ошибка: ${error}`);
+    }
+  };
 
   useEffect(() => {
     (async () => {
@@ -199,10 +202,14 @@ const App = () => {
         navigate('/', { replace: true });
       } catch (error) {
         setIsLoading(false);
+        if (error === 401) {
+          console.log(`Ошибка: ${error} Необходима авторизация`);
+          return;
+        }
         console.log(`Ошибка: ${error}`);
       }
     })();
-  }, []);
+  }, [isLoggedIn]);
 
   useEffect(() => {
     if (isLoggedIn) {

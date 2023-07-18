@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { celebrate, Joi } = require('celebrate');
 const usersRouter = require('./users');
 const cardsRouter = require('./cards');
-const { createUser, login } = require('../controllers/users');
+const { createUser, login, logout } = require('../controllers/users');
 const NotFoundError = require('../errors/NotFoundError');
 const { auth } = require('../middlewares/auth');
 const { URL_REGEX } = require('../utils/constants');
@@ -23,6 +23,8 @@ router.post('/signup', celebrate({
     password: Joi.string().required().min(8),
   }),
 }), createUser);
+
+router.post('/logout', auth, logout);
 
 router.use('/users', auth, usersRouter);
 

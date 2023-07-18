@@ -39,7 +39,7 @@ const Login = ({ onLogin, buttonState }) => {
             type="password"
             placeholder="Пароль"
             name="password"
-            minLength="6"
+            minLength="8"
             autoComplete="password"
             placeInput="authentication"
             inputValue={inputValues.password}

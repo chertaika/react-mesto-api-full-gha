@@ -4,12 +4,17 @@ import {
 } from './constants';
 
 class Auth {
-  constructor({ baseUrl, headers, endpoints: { regEndpoint, authEndpoint, tokenEndpoint } }) {
+  constructor({
+    baseUrl, headers, endpoints: {
+      regEndpoint, authEndpoint, logoutEndpoint, tokenEndpoint,
+    },
+  }) {
     this._address = baseUrl;
     this._headers = headers;
     this._regEndpoint = regEndpoint;
     this._authEndpoint = authEndpoint;
     this._tokenEndpoint = tokenEndpoint;
+    this._logoutEndpoint = logoutEndpoint;
   }
 
   _checkResponse(res) {
@@ -44,6 +49,13 @@ class Auth {
       method: METHOD_POST,
       credentials: 'include',
       body: JSON.stringify({ password, email }),
+    });
+  }
+
+  logout() {
+    return this._request(this._logoutEndpoint, this._headers, {
+      method: METHOD_POST,
+      credentials: 'include',
     });
   }
 

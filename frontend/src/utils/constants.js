@@ -17,6 +17,7 @@ const authSettings = {
   endpoints: {
     regEndpoint: '/signup',
     authEndpoint: '/signin',
+    logoutEndpoint: '/logout',
     tokenEndpoint: '/users/me',
   },
 };

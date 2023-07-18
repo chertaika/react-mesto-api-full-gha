@@ -40,7 +40,7 @@ const Register = ({ onRegister, buttonState }) => {
             type="password"
             placeholder="Пароль"
             name="password"
-            minLength="6"
+            minLength="8"
             placeInput="authentication"
             inputValue={inputValues.password}
             errorMessage={errorMessages.password}
