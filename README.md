@@ -9,7 +9,7 @@
 
 #### [Frontend https://chertaika.nomoredomains.xyz/](https://chertaika.nomoredomains.xyz/)
 
-#### [Backend https://api.chertaika.nomoredomains.xyz/](https://chertaika.nomoredomains.xyz/)
+#### [Backend https://api.chertaika.nomoredomains.xyz/](https://api.chertaika.nomoredomains.xyz/)
 
 #### [Ссылка не репозиторий](https://github.com/chertaika/react-mesto-api-full-gha)
 
